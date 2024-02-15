@@ -1,122 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bicycle Slider Card</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-
-        .slider-card {
-            width: 300px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .slide {
-            min-width: 100%;
-            box-sizing: border-box;
-        }
-
-        .slide img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .controls {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-        }
-
-        .prev, .next {
-            cursor: pointer;
-            font-size: 18px;
-            color: #333;
-        }
-    </style>
-</head>
-<body>
-
-<div class="slider-card">
-    <div class="slider">
-        <div class="slide">
-            <img src="https://placekitten.com/300/200" alt="Bicycle 1">
-
-            <div class="paragraph">
-                <p>Road bkie-Specialized</p>
-            </div>
-            <div class="price">
-                <div class="box">
-                    <h2>Diverge Elite E5</h2>
-                    <p style="text-decoration: line-through black; color: gray; font-size: 20px;">$2,000</p>
-                </div>
-                <div class="box-1">
-                    <h2>New</h2>
-                    <h2>$1,799.99</h2>
-                </div>
-            </div>
-
-        </div>
-        <div class="slide">
-            <img src="https://placekitten.com/300/201" alt="Bicycle 2">
-        </div>
-        <div class="slide">
-            <img src="https://placekitten.com/300/202" alt="Bicycle 3">
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&family=IBM+Plex+Sans:wght@100;200;300&family=Knewave&family=Luckiest+Guy&family=Protest+Riot&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/component/menu.css" />
+    <title>MENU</title>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <div class="logo">
+        <h1>P M K H</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">Bike</a>
+          </li>
+          <li>
+            <a href="">About Us</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="controls">
-        <div class="prev" onclick="prevSlide()">&#10094; Previous</div>
-        <div class="next" onclick="nextSlide()">Next &#10095;</div>
-    </div>
-</div>
-
-<script>
-    let currentIndex = 0;
-    const slides = document.querySelectorAll('.slide');
-
-    function showSlide(index) {
-        const slider = document.querySelector('.slider');
-        const slideWidth = slides[0].clientWidth;
-        currentIndex = index;
-
-        slider.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
-    }
-
-    function nextSlide() {
-        if (currentIndex < slides.length - 1) {
-            currentIndex++;
-        } else {
-            currentIndex = 0;
-        }
-        showSlide(currentIndex);
-    }
-
-    function prevSlide() {
-        if (currentIndex > 0) {
-            currentIndex--;
-        } else {
-            currentIndex = slides.length - 1;
-        }
-        showSlide(currentIndex);
-    }
-</script>
-
-</body>
+  </body>
 </html>
-
