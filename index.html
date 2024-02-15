@@ -15,29 +15,40 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"> </script>
+    <script>
+       $(document).ready(function(){
+        $('#icon').click(function(){
+            $('ul').toggleClass('show')
+        });
+
+       });
+    </script>
     <title>MENU</title>
 </head>
 
 <body>
     <div class="container">
         <div class="menu-bar">
-            <div class="logo">
-                <h1>P M K H</h1>
-            </div>
-            <div class="menu">
+           
+            <nav>
+                <label class="logo">PMKH</label>
                 <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Bike</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
+                  <li><a href="" class="ctive">Home</a></li>
+                  <li><a href="#">Bike</a></li>
+                  <li><a href="#">About</a></li>
+                  
+                  
                 </ul>
-            </div>
+                
+                <label id="icon">
+                    <i class="fa-solid fa-bars" style="color: aliceblue;font-size: 30px;line-height: 80px;margin-right: 40px;cursor: pointer;"></i>
+                </label>
+            
+            </nav>
         </div>
 
         <div class="pic">
