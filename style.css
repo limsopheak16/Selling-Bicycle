@@ -1,251 +1,361 @@
-.container{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    /* background-color: red; */
-    font-family: "Plus Jakarta Sans", sans-serif;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-h1{
-    font-family: 'Protest Riot', sans-serif;
-    font-size: 40px;
-    margin-top: 10px;
+.container-product {
+  width: 100%;
+  height: 100ppx;
+  overflow: hidden;
+  /* background-color: rgb(23, 118, 118); */
+  display: flex;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
-.menu-bar{
-    height: 80px;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
+.product-card {
+  width: 100%;
+  height: auto;
+  /* background-color: aqua; */
+  overflow: hidden;
 }
-.logo{
-    color: white;
+
+.box-card {
+  width: 100%;
+  height: auto;
+  /* background-color: burlywood; */
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  margin-top: 15px;
+  flex-wrap: wrap;
 }
-.menu ul{
-    list-style: none;
-    float: left;
-    margin-top: 30px;
+.card {
+  width: 25%;
+  height: 500px;
+
+  overflow: hidden;
+  margin-left: 10px;
+  margin-left: 5%;
+}
+.card h1 {
+  margin-left: 15px;
+}
+.img {
+  width: 100%;
+  /* background-color: chartreuse; */
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 15px;
+}
+.img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.img img:hover {
+  transform: scale(1.1);
+}
+
+.paragraph {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  overflow: hidden;
+  height: 40px;
+  width: 100%;
+  margin-left: 34px;
+}
+
+.price {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+}
+.box {
+  width: 50%;
+  height: auto;
+  /* background-color: turquoise; */
+  overflow: hidden;
+  margin-left: 15px;
+  padding: 20px;
+}
+.box-1 {
+  width: 50%;
+  height: auto;
+  /* background-color: turquoise; */
+  overflow: hidden;
+  text-align: end;
+  padding: 20px;
+}
+.new {
+  display: flex;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  /* background-color: chartreuse; */
+  justify-content: space-between;
+  align-items: center;
+}
+.new h1 {
+  font-size: 35px;
+  margin-left: 5%;
+}
+span {
+  margin-right: 5%;
+  padding: 20px;
+}
+button.btn-nav {
+  margin-left: 50px;
+  padding: 20px;
+  border-radius: 50px;
+  border-style: none;
+  background-color: black;
+}
+i {
+  color: white;
+  font-size: 20px;
+}
+span :hover {
+  background-color: gray;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  /* background-color: red; */
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Protest Riot", sans-serif;
+  font-size: 40px;
+  margin-top: 10px;
+}
+.menu-bar {
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.logo {
+  color: white;
+}
+.menu ul {
+  list-style: none;
+  float: left;
+  margin-top: 30px;
 }
 .menu ul li {
-    float: left;
+  float: left;
 }
-.menu ul li a{
-    padding: 20px;
-    text-decoration: none;
-    color: white;
+.menu ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
 }
-.pic{
-    overflow: hidden;
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    
-    
+.pic {
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
-.pic img{
-    position: relative;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+.pic img {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
-.responsive{
-    width: 100%;
-    height: auto;
-    text-align: center;
-    position: relative;
+.responsive {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  position: relative;
 }
-.text{
-    width: 30%;
-    height: 200px;
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    padding: 10px;
-    font-size: 25px;  
-
+.text {
+  width: 30%;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  padding: 10px;
+  font-size: 25px;
 }
-.text h3{
-    color: rgb(83, 75, 75);
+.text h3 {
+  color: rgb(83, 75, 75);
 }
-button{
-    width: 150px;
-    padding: 20px;
-    background-color: white;
-    color: black;
-    border-radius:50px ;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
+button {
+  width: 150px;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
 @media screen and (max-width: 800px) {
-    button {
-      padding: 20px;
-      font-size: 20px;
-    }
-    .text{
-        width: 100%;
-        position: absolute;
-        top: 200px;
-        left: 30px;
-        gap: 18px;
-        color: black;
-        gap: 18px;
-    }
-    .text h3{
-        color: rgb(83, 75, 75);
-    }
-    .text p{
-        font-size: 26px;
-        /* font-weight: bold; */
-        line-height: 29.2px;
-        
-        
-    }
-    .pic img{
-        width: 600px;
-        height: 450px;
-    }
-
+  button {
+    padding: 20px;
+    font-size: 20px;
   }
-
-
-  .footer-all{
+  .text {
     width: 100%;
-    height:1100px;
-    overflow: hidden;
-    background-color: black;
-    position: relative;
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    gap: 18px;
+    color: black;
+    gap: 18px;
+  }
+  .text h3 {
+    color: rgb(83, 75, 75);
+  }
+  .text p {
+    font-size: 26px;
+    /* font-weight: bold; */
+    line-height: 29.2px;
+  }
+  .pic img {
+    width: 600px;
+    height: 450px;
+  }
 }
-.footer-text{
-   font-size: 20px;
-   color: white;
-   margin-left: 20px;
-   position: absolute;
-   top: 10%;
-   left: 5%;
-   line-height: 1;
-}
-.footer-text button{
-   width: 150px;
-   padding: 20px;
-   background-color: white;
-   color: black;
-   border-radius:50px ;
-   font-size: 20px;
-   font-weight: bold;
-   cursor: pointer;
-}
-.image{
- position: relative;
- width: 100%;
 
+.footer-all {
+  width: 100%;
+  height: 1100px;
+  overflow: hidden;
+  background-color: black;
+  position: relative;
 }
-.image img{
- width: 100%;
- height: 750px;
- object-fit: cover;
+.footer-text {
+  font-size: 20px;
+  color: white;
+  margin-left: 20px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  line-height: 1;
+}
+.footer-text button {
+  width: 150px;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.image {
+  position: relative;
+  width: 100%;
+}
+.image img {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
 }
 @media screen and (max-width: 900px) {
-   .image img{
-     height: 700px;
-     object-fit: cover;
-   }
-   .footer-text{
+  .image img {
+    height: 700px;
+    object-fit: cover;
+  }
+  .footer-text {
     font-size: 16px;
-   }
-   .custom-shape-divider-bottom-1707708962{
-     position: absolute;
-     top: 75%;
-     left: 0;
-     width: 100%;
-     height: 900px;
-     overflow: hidden;
-
-   }
-   .headup ul{
-     flex-direction: column;
-     font-size: 14px;
-
-   }
-   .headup ul li a{
+  }
+  .custom-shape-divider-bottom-1707708962 {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+  }
+  .headup ul {
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .headup ul li a {
     font-size: 16px;
-     width: 50%;
-     text-align: center;
-     align-items: center;
-     justify-content: center;
-   }
-   .headdown h3{
-     text-align: center;
-     font-size: 16px;
-   }
-
-   
- }
- .custom-shape-divider-bottom-1707708962 {
-   position: absolute;
-   top: 80%;
-   left: 0;
-   width: 100%;
-   height:auto;
-   overflow: hidden;
-   line-height: 4;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .headdown h3 {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+.custom-shape-divider-bottom-1707708962 {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  line-height: 4;
 }
 
 .custom-shape-divider-bottom-1707708962 svg {
-   position: relative;
-   display: block;
-   width: calc(149% + 1.4px);
-   height: 400px;
+  position: relative;
+  display: block;
+  width: calc(149% + 1.4px);
+  height: 400px;
 }
 
 .custom-shape-divider-bottom-1707708962 .shape-fill {
-   fill:black;
-   
+  fill: black;
 }
-.footer{
- position: absolute;
- bottom:90;
- width: 100%;
- height: 80vh;
- background-color: black;
+.footer {
+  position: absolute;
+  bottom: 90;
+  width: 100%;
+  height: 80vh;
+  background-color: black;
 }
-.headup{
- width: 100%;
- height: 10vh;
- align-items: center;
- /* background-color: aqua; */
- 
+.headup {
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  /* background-color: aqua; */
 }
-.headup ul{
- display: flex;
- gap: 30px;
- align-items: center;
- justify-content: center;
- list-style-type: none;
+.headup ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
 }
-.headup ul li a{
- text-decoration: none;
- color: white;
- font-size: 25px;
- font-weight: bold;
- text-align: center;
+.headup ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
 }
 /* .headup p{
  color: white;
  text-align: center;
  font-size: 4.5vh;
 } */
-.headdown h3{
- display: flex;
- align-items: center;
- justify-content: center;
- width: 100%;
- height: 5vh;
- margin-top: 70px;
- font-size: 20px;
- font-weight: bold;
- color: white;
- text-align: center;
- line-height:2;
- 
+.headdown h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5vh;
+  margin-top: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 2;
 }
