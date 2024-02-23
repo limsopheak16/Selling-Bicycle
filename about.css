@@ -101,17 +101,8 @@ nav {
     top: 40%;
     left: 10%;
     padding: 10px;
-    font-size: 25px; 
+    font-size: 23px; 
      
-}
-.text h3{
-    color: black;
-    font-size: 20px;
-    
-}
-.text h1{
-    color: black;
-
 }
 .about-us{
   width: 95%;
@@ -184,20 +175,12 @@ button{
         width: 100%;
         position: absolute;
         top: 200px;
-        left: 30px;
+        left: 10px;
         color: black;
         gap: 18px;
+        font-size: 10px;
     }
-    .text h3{
-        color: rgb(83, 75, 75);
-    }
-    .text p{
-        font-size: 26px;
-        /* font-weight: bold; */
-        line-height: 29.2px;
-        
-        
-    }
+    
     .pic img{
         width:70vh;
         height: 450px;
@@ -362,23 +345,27 @@ button{
      width: 100%;
      height: 900px;
      overflow: hidden;
-
    }
    .headup ul{
      flex-direction: column;
      font-size: 14px;
+     line-height: 1;
 
    }
    .headup ul li a{
     font-size: 16px;
-     width: 50%;
+     width: 100%;
      text-align: center;
      align-items: center;
      justify-content: center;
    }
    .headdown h3{
+    width: 100%;
+    align-items: center;
      text-align: center;
      font-size: 16px;
+     line-height: 3;
+    
    }
    .about{
     flex-direction: column;
